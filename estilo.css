@@ -3,6 +3,9 @@
 body {
     margin: 0;
     padding: 0;
+    background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%,
+    rgba(12, 112, 242, 0) 24.84%) #303030;
+    background-repeat: no-repeat;
 }
 
 #principal {
@@ -33,7 +36,6 @@ body {
     display: flex;
     width: 45%;
     justify-content: space-around;
-
     margin-left: 5%;
 }
 
