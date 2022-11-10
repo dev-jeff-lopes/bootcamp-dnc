@@ -152,3 +152,86 @@ form input[type="submit"] {
     font-size: 32px;
     height: 55px;
 }
+
+footer {
+    width: 100%;
+    color: #fff;
+    font-family: var(--font-padrao);
+    background-color: var(--azul-dnc);
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .linha1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+footer ul li {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+footer ul li a:hover {
+    color: var(--cinza-hover);
+}
+
+footer h5 {
+    background-color: var(--preto-dnc);
+    text-align: center;
+    font-weight: 800;
+    font-size: 25px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.endereco {
+    width: 30%;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.linha1 nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+}
+
+footer .linha2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 20px;
+
+
+}
+
+footer .linha2 a:first-child{
+    padding-right: 10px;
+    border-right: 3px solid #fff;
+    margin: 0 10px;   
+}
+
+footer .linha2 a:hover{
+    color: var(--cinza-hover)
+}
