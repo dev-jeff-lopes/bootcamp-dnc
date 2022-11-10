@@ -70,8 +70,6 @@ section {
 }
 
 section header {
-
-
     text-align: center;
 }
 
@@ -226,12 +224,81 @@ footer .linha2 {
 
 }
 
-footer .linha2 a:first-child{
+footer .linha2 a:first-child {
     padding-right: 10px;
     border-right: 3px solid #fff;
-    margin: 0 10px;   
+    margin: 0 10px;
 }
 
-footer .linha2 a:hover{
+footer .linha2 a:hover {
     color: var(--cinza-hover)
+}
+
+@media only screen and (max-width: 600px) {
+
+    /*menu*/
+    #principal {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #menu {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin: 30px 0 0 0;
+    }
+
+    #menu a {
+        height: 50px;
+    }
+
+    #principal button {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* section */
+    section {
+        margin-top: 60px;
+    }
+
+    section header h1 {
+        font-size: 40px;
+        margin-top: 0px;
+    }
+
+    section header h2 {
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+
+    form {
+        width: 95%;
+        font-size: 20px;
+    }
+
+    .checkbox-itens label {
+        font-size: 17px;
+    }
+
+    form input::placeholder {
+        font-size: 18px;
+    }
+
+    /*footer*/
+
+    footer {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    footer .linha1 {
+        flex-direction: column;
+    }
+
+    .endereco{
+        width: 95%;
+    }
+
 }
