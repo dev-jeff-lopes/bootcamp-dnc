@@ -1,17 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
+:root {
+    --azul-dnc: #0C70F2;
+    --preto-dnc: #303030;
+    --cinza-hover: #c9c9c9;
+    --font-padrao: 'Inter';
+}
+
 body {
     margin: 0;
     padding: 0;
     background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%,
-    rgba(12, 112, 242, 0) 24.84%) #303030;
+            rgba(12, 112, 242, 0) 24.84%) #303030;
     background-repeat: no-repeat;
 }
 
 #principal {
     width: 100%;
     height: 100px;
-    background-color: #303030;
+    background-color: var(--preto-dnc);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +26,7 @@ body {
 }
 
 #principal div a {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-padrao);
     font-style: normal;
     font-weight: 600;
     font-size: 25px;
@@ -28,8 +35,8 @@ body {
     text-decoration: none;
 }
 
-#principal div a:hover{
-    color: #bababa;
+#principal div a:hover {
+    color: var(--cinza-hover);
 }
 
 #menu {
@@ -40,16 +47,108 @@ body {
 }
 
 #principal button {
-    font-family: 'Inter';
+    font-family: var(--font-padrao);
     font-size: 20px;
     font-weight: 600;
     color: #fff;
     margin-right: 5%;
-    background-color: #0c70f2;
+    background-color: var(--azul-dnc);
     border: none;
     height: 40px;
     width: 80px;
     box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
     cursor: pointer;
-    
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0;
+    color: #fff;
+    font-family: var(--font-padrao);
+}
+
+section header {
+
+
+    text-align: center;
+}
+
+section header h1 {
+    font-weight: 800;
+    font-size: 80px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+section header h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 100px;
+}
+
+.invert {
+    background-color: #000;
+    font-weight: bold;
+    padding: 5px;
+}
+
+form {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    width: 600px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+form input {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    border: 0;
+    height: 45px;
+    font-size: 25px;
+    padding-left: 15px;
+}
+
+form label {
+    margin: 10px 0;
+}
+
+form input::placeholder {
+    color: rgba(57, 57, 57, 0.5);
+}
+
+.checkbox-itens label {
+    font-size: 25px;
+}
+
+.checkbox-itens {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.checkbox-itens input[type="checkbox"] {
+    transform: scale(1.7);
+}
+
+form input[type="submit"] {
+    background: rgba(12, 112, 242, 0.9);
+    box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 80px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    font-size: 32px;
+    height: 55px;
 }
